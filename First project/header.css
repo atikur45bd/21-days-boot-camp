@@ -1,0 +1,127 @@
+/* Header container styles */
+.header-container {
+    height: auto; /* Adjust height to auto to accommodate content */
+    background-color: var(--background-color);
+    background-image: url(./images/name-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-bottom: 20px; /* Add padding to the bottom */
+}
+
+/* Navigation styles */
+.nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    color: var(--font-primary-color);
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.right-manu-icon {
+    width: 175px;
+    text-align: right;
+}
+
+.nav img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Banner styles */
+.banner-title {
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.banner-title h1 {
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.banner-desc {
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+.banner-profile-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+    padding-top: 20px; /* Add padding to the top */
+    padding-bottom: 20px; /* Add padding to the bottom */
+}
+
+.banner-image-container {
+    background: var(--font-primary-color);
+    width: fit-content;
+}
+
+.banner-profile-desc {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 40px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--font-primary-color);
+}
+
+.work-icon-container {
+    display: flex;
+    gap: 14px;
+}
+
+.work-icon-container svg {
+    width: 60px;
+    height: 60px;
+}
+
+/* Complete project styles */
+.complete-project-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--font-primary-color);
+    margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+.complete-project-card h1 {
+    font-size: 150px;
+    text-transform: uppercase;
+}
+
+.complete-project-card p {
+    font-size: 40px;
+}
+
+    /* this is media quary*/
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+    .container {
+        padding: 20px 60px;
+    }
+    .nav {
+        font-size: 16px;
+    }
+    .banner-title h1 {
+      font-size: 25px;
+    }
+    .complete-project-container{
+        flex-direction: column;
+    }
+    .banner-profile-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-image-container{
+        width: 100%;
+    }
+    #banner-image{
+        width: 100%;
+    }
+}
